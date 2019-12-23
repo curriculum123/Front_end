@@ -1,0 +1,222 @@
+@import "base";
+
+.js_layout {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #eee;
+
+  //顶部搜索块
+  > .js_search {
+    width: 100%;
+    height: 40px;
+    max-width: 640px;
+    position: fixed;
+    background-color: rgba(233, 35, 34, 0);
+    z-index: 999;
+    > .jd_logo {
+      width: 56px;
+      height: 30px;
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      background: url("../images/jd-sprites.png");
+      background-size: 200px 200px;
+      background-position: 0 -108px;
+    }
+    > .jd_login {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      line-height: 40px;
+      color: #fff;
+    }
+    > .jd_searchBox {
+      width: 100%;
+      height: 100%;
+      padding-left: 76px;
+      padding-right: 50px;
+      > input {
+        width: 100%;
+        height: 30px;
+        padding-left: 30px;
+        margin-top: 5px;
+        border-radius: 15px;
+      }
+      &::before {
+        content: "";
+        width: 27px;
+        height: 23px;
+        position: absolute;
+        top: 7px;
+        left: 80px;
+        background: url("../images/jd-sprites.png");
+        background-size: 200px 200px;
+        background-position: -56px -108px;
+      }
+    }
+  }
+  //轮播图
+  > .js_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    > .jd_bannerImg {
+      width: 1000%;
+      position: relative;
+      > li {
+        width: 10%;
+        float: left;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+    > .jd_indicator {
+      width: 128px;
+      height: 10px;
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      > li {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        margin-left: 10px;
+        float: left;
+      }
+      > li:first-of-type {
+        margin-left: 0;
+      }
+      > li.active {
+        background-color: #fff;
+      }
+    }
+  }
+  //导航块
+  > .jd_nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    li {
+      width: 25%;
+      float: left;
+      text-align: center;
+      margin-top: 5px;
+      img {
+        width: 50px;
+      }
+      p {
+        line-height: 25px;
+      }
+    }
+  }
+  //产品块
+  > .jd_product {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    > .jd_productBox {
+      background-color: #fff;
+      margin-top: -5px;
+      > .jd_pTip {
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #ccc;
+        color: #666;
+        > h3 {
+          padding-left: 30px;
+        }
+      }
+      > .jd_pContent {
+        width: 100%;
+        > .a_50 {
+          float: left;
+          width: 50%;
+          display: block;
+          > img {
+            width: 100%;
+            display: block;
+          }
+        }
+        > .b_left {
+          border-left: 1px solid #ccc;
+        }
+        > .b_bottom {
+          border-bottom: 1px solid #ccc;
+        }
+        > .b_right {
+          border-right: 1px solid #ccc;
+        }
+        > .f_right {
+          float: right;
+        }
+      }
+    }
+    > .jd_sk {
+      margin-top: 10px;
+      > .jd_pTip {
+        border-bottom: 0;
+        > .jd_left {
+          //float: left;
+          > .jd_icon {
+            width: 16px;
+            height: 20px;
+            background-image: url("../images/seckill-icon.png");
+            background-size: 16px 20px;
+            margin-top: 3px;
+            margin-left: 5px;
+            float: left;
+          }
+          > .jd_text {
+            color: #e92322;
+            float: left;
+            margin-left: 5px;
+          }
+          > .jd_time {
+            float: left;
+            margin-left: 5px;
+            span {
+              display: inline-block;
+              background-color: #000;
+              color: #fff;
+              width: 13px;
+              height: 18px;
+              line-height: 18px;
+              text-align: center;
+            }
+            span:nth-child(3n) {
+              background-color: transparent;
+              color: #000;
+              width: 8px;
+            }
+          }
+        }
+        > .jd_right {
+          float: right;
+          margin-right: 10px;
+        }
+      }
+      > .jd_pContent {
+        padding: 20px;
+        ul {
+          width: 100%;
+          //padding: 20px;
+          li {
+            width: 33.33%;
+            float: left;
+            text-align: center;
+            img {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

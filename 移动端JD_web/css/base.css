@@ -1,0 +1,40 @@
+html,
+body,
+input,
+ul,
+li,
+a,
+p,
+div,
+form {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: "微软雅黑", sans-serif;
+  font-size: 13px;
+}
+a,
+a:hover {
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+input {
+  outline: 0;
+  border: none;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>程序人生</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="w">
+        <div class="banner_left">
+            <div class="first">
+                <div class="logo">
+                    <span><a href="">程序人生</a></span>
+                    <p>Fuzzing / Vulnerability / Exploit</p>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li><i></i><a href="#">Home<span></span></a></li>
+                        <li><a href="#">Catrgories<span></span></a></li>
+                        <li><a href="#">Archives<span></span></a></li>
+                        <li><a href="#">Tags<span></span></a></li>
+                        <li><a href="#">About<span></span></a></li>
+                        <li><a href="#">Sitemap<span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second">
+                <img src="images/tou.jpg">
+                <!--网名-->
+                <p class="name">KeLiu</p>
+                <!--个性签名-->
+                <p class="autograph">
+                    Security Researcher Working at Tencent Security Xuanwu Lab
+                </p>
+                <div class="detail">
+                    <ul>
+                        <li><a href=""><span>3</span><p>ports</p></a></li>
+                        <li><a href=""><span>4</span><p>categories</p></a></li>
+                        <li><a href=""><span>11</span><p>tags</p></a></li>
+                    </ul>
+                </div>
+                <div class="rss">
+                    <a href="">RSS</a>
+                </div>
+                <div class="Twitter">
+                    <a href="">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="banner_right">
+            <div class="text">
+                <div class="box">
+                    <a href=""><span class="span_text">CVE-2019-5786 Chrome FileReader UAF 漏洞分析</span></a>
+                </div>
+                <div class="author">
+                    <span>Posted on 2019-03-25 </span>
+                    <span>In <a href="">Vulnerability</a> , <a href="">Chrome</a></span>
+                </div>
+                <!--81-->
+                <!--224-->
+                <div class="text_content">
+                    <h4>0x01. 漏洞简介</h4>
+                    <div class="text_content_1">
+                        <p>准备用业余时间学习一点浏览器漏洞利用相关的知识，刚好最近 Chrome 爆出来一个野外利用漏洞
+                            CVE-2019-5786 ，而且网上也有两篇比较详细的分析报告（来自 Exodus Intelligence 和 McAfee Labs），
+                            刚好可以借鉴学习一下漏洞的原理以及利用技巧。</p>
+                        <p>
+                            Chrome 72.0.3626.121 的 安全公告 显示，漏洞 CVE-2019-5786 由 Google Threat Analysis Group 的
+                            Clement Lecigne 发现其被利用于野外攻击（配合 Windows 内核空指针漏洞 CVE-2019-0808 可实现
+                            Windows 7 下的提权操作）。
+                        </p>    ·
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="">
+                        Read more »
+                    </a>
+                </div>
+                <div class="hr"></div>
+            </div>
+            <div class="text">
+                <div class="box">
+                    <a href=""><span class="span_text">为什么我的 WinDbg 内存断点失效了？</span></a>
+                </div>
+                <div class="author">
+                    <span>Posted on 2019-03-11 </span>
+                    <span>In <a href="">Vulnerability</a> , <a href="">Analysis</a></span>
+                </div>
+                <!--81-->
+                <!--224-->
+                <div class="text_content">
+                    <h4>0x01. 问题描述</h4>
+                    <div class="text_content_1">
+                        <p>周末在测试一个程序时，发现其莫名其妙的 Crash 在了一个系统自带 DLL 的某个函数里面，而且很难直观地
+                            看出来 Crash 的原因，分析之后发现是不当使用 C 语言 setjmp 和 longjmp 两个函数导致的。那么这和文
+                            章标题有什么联系呢？笔者在分析的过程中使用了 WinDbg 的内存断点（ Processor Breakpoint /
+                            Data Breakpoint ）来跟踪一个栈变量的读写操作，理论上这个断点会多次命中，但实际上只命中了一次，
+                            而这个现象正是由于不当使用 setjmp 和 longjmp 导致 esp 和 ebp 寄存器的值的非预期改变所
+                            导致的。</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="">
+                        Read more »
+                    </a>
+                </div>
+                <div class="hr"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom">
+        <div class="bottom_content">
+
+            <div class="bottom_content_span">
+                <span>Powered by <a href="">tianYuan</a></span>
+                <span>Theme - <a href="">NexT.Pisces</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
